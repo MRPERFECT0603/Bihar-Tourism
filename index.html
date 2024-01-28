@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toursim Site HomePage</title>
+    <link rel="stylesheet" href="./indexstyle.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img src="./Assets/logo.png" alt="" />
+        <h1>Bihar Tourism</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#heritage" class="scroll-link">Heritage</a></li>
+          <li><a href="./hotel.html" target="_blank">Hotel Booking</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="landing" id="home">
+      <video width="100%" height="100%" controls autoplay muted loop>
+        <source src="./Assets/bihar_english.mp4" type="video/mp4" />
+        Error in Loading The Video..
+      </video>
+    </div>
+    <div class="slideshow" id="Gallery">
+      <div class="explore">
+        <h1>Discover Top Destinations</h1>
+      </div>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <img class="mandala1 rotate" src="./Assets/mandala.png" alt="Mandala" />
+        <img class="mandala2 rotate" src="./Assets/mandala.png" alt="Mandala" />
+        <div class="mySlides fade img1">
+          <img src="./Assets/vishwa shanti.jpeg" />
+          <div class="text"><span class="name">Vishwa Shanti Stupa</span></div>
+        </div>
+
+        <div class="mySlides fade img2">
+          <img src="./Assets/bhawani waterfall.jpeg" />
+          <div class="text"><span class="name">Bhawani Waterfall</span></div>
+        </div>
+
+        <div class="mySlides fade img3">
+          <img src="./Assets/ruins of nalanda.jpeg" />
+          <div class="text"><span class="name">Ruins of Nalanda</span></div>
+        </div>
+
+        <div class="mySlides fade img4">
+          <img src="./Assets/ashoka pillar.jpeg" />
+          <div class="text"><span class="name">Ashoka Pillar</span></div>
+        </div>
+
+        <div class="mySlides fade img5">
+          <img src="./Assets/bodh gaya.jpeg" />
+          <div class="text"><span class="name">Bodh Gaya</span></div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+    </div>
+
+    <div class="unlockBihar" id="heritage">
+      <div class="left">
+        <div class="up">
+          <h1>Unlock Bihar</h1>
+          <p>Extraordinary places to visit</p>
+        </div>
+        <div class="down">
+          <h3>1. Valmiki Tiger Reserve</h3>
+          <p>
+            Valmiki Tiger Reserve forms the eastern most limit of the Himalayan
+            Terai forests in India, and is the only tiger reserve of Bihar.
+            Situated in the Gangetic Plains bio-geographic zone of the country,
+            the forest has combination of bhabar and terai tracts. Valmiki Tiger
+            Reserve lies in the north-westernmost West Champaran district of
+            Bihar. Name of the district has been derived from two words Champa
+            and Aranya meaning Forest of Champa trees. Wild mammals found in the
+            forests of Valmiki Tiger Reserve are Tiger, Sloth bear, Leopard,
+            Wild dog, Bison, Wild boar etc. Several species of deer and
+            antelopes viz barking deer, spotted deer, hog deer, sambar and blue
+            bull are also found here. In Madanpur forest block large number of
+            Indian flying foxes can be sighted. The Reserve has rich avi-fauna
+            diversity. Over 250 species of birds have been reported. Valmiki
+            Sanctuary covers about 800 square kilometres (310 sq mi) of forest
+            and was the 18th tiger reserve established in India.
+          </p>
+          <div class="btn"><button>Read More</button></div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./Assets/bihar.png" alt="" />
+        <!-- <img src="./Assets/ashoka pillar.jpeg" alt="Overlay Image" class="overlay-image"> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="list">
+        <div class="list1">
+          <span>Departments</span>
+          <ul>
+            <li>Bihar</li>
+            <li>Bihar Government</li>
+            <li>Bihar Tourism</li>
+            <li>BSTDC</li>
+            <li>Bihar Tourism Policy 2024</li>
+          </ul>
+        </div>
+        <div class="list2">
+          <span>Travel</span>
+          <ul>
+            <li>Climate & Weather</li>
+            <li>Getting Around</li>
+            <li>Place to Stay</li>
+            <li>Guide List</li>
+            <li>State COVID Guidelines</li>
+          </ul>
+        </div>
+        <div class="list3">
+          <span>Important Links</span>
+          <ul>
+            <li>FAQs</li>
+            <li>How to Explore Website</li>
+            <li>Tenders</li>
+            <li>
+              Guidelines for Hotel recognition and Travel agent Recognition
+            </li>
+            <li>Tagline Contest</li>
+          </ul>
+        </div>
+        <div class="list4">
+          <span>Contacts</span>
+          <ul>
+            <li>+91-612-2217045</li>
+            <li>secy-tourism-bih@nic.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./Assets/logo.png" alt="" />
+      </div>
+    </footer>
+    <div class="last">
+        <div class="left"><p>Privacy Policies</p></div>
+        <div class="right">
+          <p>Copyright © 2024 | Last Updated: 03-Jan-2024</p>
+        </div>
+  </body>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</html>

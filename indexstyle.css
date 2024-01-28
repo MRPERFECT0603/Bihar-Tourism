@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    padding-top: 10px;
+    display: flex;
+    flex:1;
+    max-height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;  
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+
+}
+
+.left{
+    display: flex;
+    flex: 0.6;
+}
+
+.left img{
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.left h1{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.right{
+    display: flex;
+    flex: 0.4;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.right ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+.right ul li{
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    font-weight: 600;
+}
+/* .landing{
+    background: linear-gradient(black , white);
+} */
+
+.slideshow
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    height: 100vh;
+    z-index: 200;
+}
+.slideshow .explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:75px;
+    color: black;
+    padding-left: 30px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+.mySlides img{
+    /* padding-top: 75px; */
+    width: 100%;
+    height: 75vh;
+    border-radius: 20px;
+}
+/* Next & previous buttons */
+.prev, .next {
+ cursor: pointer;
+ position: absolute;
+ top: 50%;
+ width: auto;
+ margin-top: -22px;
+ padding: 16px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+ background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+ color: black;
+ font-size: 25px;
+ padding: 20px 40px;
+ position: absolute;
+ bottom: 8px;
+ width: 100%;
+ text-align: start;
+ line-height: 45px;
+}
+
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+ background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+/* .img1{
+    background-image: url("./Assets/vishwa\ shanti.jpeg");
+} */
+
+.name{
+    background-color: rgba(255, 255, 255, 0.8) ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mandala1{
+    height: 300px;
+    position: absolute;
+    left: -300px;
+    top: 0px;
+}
+
+.mandala2{
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 825px;
+}
+.rotate {
+    animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+.unlockBihar{
+    margin-left: 20px;
+    margin-top: 75px;
+    display: flex;
+    flex: 1;
+    padding-top: 75px;
+}
+.unlockBihar .left{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.unlockBihar .left .up{
+    display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+.unlockBihar .left .up h1 {
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 42px;
+}
+.unlockBihar .left .up p{
+    color: black;
+    text-align: start;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.unlockBihar .left .down h3{
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: start;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 26px;
+}
+.unlockBihar .left .down p{
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: start;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 16px;
+}
+.unlockBihar .left .down button{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-weight: 300;
+    color: white;
+    text-align: start;
+    margin-left: 20px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: rgb(202, 4, 4);
+    border: none;
+    border-radius: 5px;
+}
+.unlockBihar .left .down button:hover{
+    background-color: rgb(155, 2, 2);
+    cursor: pointer;
+}
+.unlockBihar .right{
+    display: flex;
+}
+.unlockBihar .right img{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+
+footer{
+    display: flex;
+    background-color: #151515;
+    color: white;
+    padding-top: 10px;
+}
+footer .list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .list ul{
+    list-style-type: none;
+    margin-left: -30px;
+}
+footer span{
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 300;
+    padding-left: 15px;
+
+}
+footer li{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 200;
+    padding: 10px;
+    color: #ffffff;
+    opacity: 38%;
+}
+footer li:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+footer .image{
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+footer .image img{
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.last{
+    display: flex;
+    background-color: #151515;
+    padding: 10px 20px;
+}
+.last p{
+    color: #ffffff;
+    opacity: 38%;
+}
+.last .left p:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
